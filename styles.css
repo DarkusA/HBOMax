@@ -1,63 +1,74 @@
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(0deg, rgb(0 0 0) 10%, rgba(0, 0, 0, 0) 30%);
+    background-color: #000000;
     font-family: "Segoe UI";
     color: #ffffff;
 }
 
 nav {
-    background-color: rgb(0,0,0,.9);
+    background-color: rgb(0, 0, 0, .9);
     position: fixed;
     padding: 5px 16px 5px 16px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    top:0;
+    top: 0;
     left: 0;
     box-sizing: border-box;
     z-index: 1000;
 }
 
-#main-section{
-    background-image: url("./Imgs/HBOBackground2.jpg");  
+#main-section {
+    background-image: url("./Imgs/HBOBackground2.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     padding: 60px;
-}   
+    position: relative;
+}
 
-#nav-logo{
+#main-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, rgb(0 0 0) 10%, rgba(0, 0, 0, 0) 30%);
+    pointer-events: none;
+}
+
+#nav-logo {
     height: 32px;
     margin-right: 16px;
     padding: 4px 0;
 }
 
-.header-text{
+.header-text {
     font-size: 13px;
     font-weight: 700;
     padding: 10px;
     border: 1px solid transparent;
     border-radius: 8px;
+    color: #ffffff;
 }
 
-#header-secondary{
+#header-secondary {
     display: flex;
     align-items: center;
 }
 
-#header-secondary-buttons{
+#header-secondary-buttons {
     display: flex;
     align-items: center;
 }
 
-a{
+a {
     white-space: nowrap;
+    text-decoration: none;
 }
 
-.button-primary{
+.button-primary {
     background-color: #ffffff;
     color: #000000;
     padding: 10px 24px;
@@ -66,25 +77,25 @@ a{
     margin-left: 16px;
 }
 
-#button-primary-main{
+#button-primary-main {
     padding: 13px 24px;
     margin-top: 0;
 }
 
-#main-logo-container{
+#main-logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
 }
 
-#main-container{
+#main-container {
     text-align: center;
     position: relative;
     margin-top: 320px;
 }
 
-p {
+#price-info {
     font-size: 28px;
     margin-top: 0;
 }
@@ -95,9 +106,9 @@ p {
 
 button {
     background-color: rgb(0, 0, 0);
-}       
+}
 
-/* #h2-container{
+#h2-container {
     text-align: center;
 }
 
@@ -108,7 +119,185 @@ h2 {
     font-size: 1.5rem;
 }
 
-#plan-switcher-container{
+#plan-switcher-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-} */
+#plan-switcher {
+    background-color: rgba(128, 128, 128, 0.36);
+    border-radius: 100px;
+    margin-bottom: 30px;
+}
+
+.plan-switcher-button {
+    width: 200px;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: .1em;
+    padding: 12px;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+#plan-switcher-month {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#plan-switcher-year {
+    background-color: rgba(128, 128, 128, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+label {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 220px;
+    margin-bottom: 4px;
+}
+
+#plans {
+    display: flex;
+    gap: 0.5em;
+    padding: 0px 15px;
+    align-items: stretch;
+}
+
+.plan {
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 0.25em;
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-padding {
+    padding: 1.25em 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h5 {
+    margin-top: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+    padding-bottom: .75rem;
+    color: rgba(0, 0, 0, .6);
+}
+
+h4 {
+    font-size: 30px;
+    text-align: left;
+}
+
+h3 {
+    font-weight: 600;
+    line-height: 1.35;
+    margin: 0;
+}
+
+em {
+    font-size: .875rem;
+    font-weight: normal;
+    color: rgba(0, 0, 0, .6);
+}
+
+.plan-select {
+    background-color: #4F6984;
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    padding: 13px 10px;
+    border-radius: 8px;
+    margin-left: 60px;
+}
+
+.plan-price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.plan-price-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-saves {
+    color: #4F6984;
+    font-size: 0.9rem;
+}
+
+small {
+    line-height: 1.6;
+    font-size: 70%;
+}
+
+#small-text-container {
+    padding: 0px 15px;
+    margin: 20px 190px;
+}
+
+li {
+    font-size: 0.875rem;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.Checkmark::before {
+    background-image: url(./Imgs/Checkmark.svg);
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.TV-Icon::before {
+    background-image: url(./Imgs/TV-Icon.svg);
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+.Download-Icon::before {
+    background-image: url(./Imgs/Download-Icon.svg);
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+
+.Headphones-Icon::before {
+    background-image: url(./Imgs/Headphones-Icon.svg);
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+
+#help-info {
+    color: #4f8bff;
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
