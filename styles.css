@@ -388,3 +388,34 @@ ul {
     display: flex;
     overflow-x: scroll;
 }
+
+#trailers-main-text {
+    color: hsla(0, 0%, 100%, .8);
+    font-size: xxx-large;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.trailer-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 350px;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#trailers-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.trailers-sub-container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
