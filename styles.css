@@ -301,3 +301,90 @@ ul {
         cursor: pointer;
     }
 }
+
+#categories-header-container {
+    padding: 60px 150px;
+}
+
+#categories-header {
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.category-container {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 0 0 auto;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+.category-name {
+    text-align: center;
+    font-size: 19px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+.show-name {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: rgba(231, 231, 231, 0.8);;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+
+.original {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(231, 231, 231, 0.8);
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#family-image {
+    background-image: url(./Imgs/family.jpg);
+}
+
+#reality-image {
+    background-image: url(./Imgs/reality.jpg);
+}
+
+#novelas-image {
+    background-image: url(./Imgs/novelas.jpg);
+}
+
+#movies-image {
+    background-image: url(./Imgs/movies.jpg);
+}
+
+#drama-image {
+    background-image: url(./Imgs/drama.jpg);
+}
+
+#action-image {
+    background-image: url(./Imgs/action.jpg);
+}
+
+#comedy-image {
+    background-image: url(./Imgs/comedy.jpg);
+}
+
+#documentaries-image {
+    background-image: url(./Imgs/documentaries.jpg);
+}
+
+#categories-container {
+    display: flex;
+    overflow-x: scroll;
+}
