@@ -51,6 +51,10 @@ nav {
     border: 1px solid transparent;
     border-radius: 8px;
     color: #ffffff;
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(64, 68, 89, .6);;
+    }
 }
 
 #header-secondary {
@@ -75,6 +79,10 @@ a {
     font-family: "Segoe UI";
     font-weight: 700;
     margin-left: 16px;
+    &:hover {
+        cursor: pointer;
+        background-color: hsla(0, 0%, 100%, .75);;
+    }
 }
 
 #button-primary-main {
@@ -418,4 +426,75 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+#trailers-suscribe-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+
+#trailers-suscribe-btn {
+    padding: 10px 25px;
+    font-size: 16px;
+}
+
+#featured-series-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+    flex-direction: column;
+}
+
+#carrousel-header {
+    font-size: 35px;
+    line-height: 47px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0px;
+}
+
+#carrousel-indicators {
+    display: flex;
+    justify-content: center;
+}
+
+#carrousel-indicator-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    list-style-type: none;
+    gap: 10px;
+    width: 50%;
+    scrollbar-width: none;
+    justify-content: flex-start;
+    overflow: scroll;
+    opacity: 1;
+    white-space: nowrap;
+    margin-top: 0;
+}
+
+ol li {
+    font-size: 60px;
+    padding: 0px 56px;
+}
+
+#carrousel-images-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrousel-images-sub-container {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.carrousel-image {
+    width: 350px;
+    height: 200px;
+    border: 1px solid rgb(0, 0, 0);
 }
