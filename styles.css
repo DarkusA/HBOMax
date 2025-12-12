@@ -90,11 +90,13 @@ a {
     margin-top: 0;
 }
 
-#main-logo-container {
+.main-logo-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-bottom: 0;
+    align-items: center;
+    margin-top: 120px;
 }
 
 #main-container {
@@ -263,6 +265,12 @@ li {
 ul {
     padding: 0;
     list-style-type: none;
+    &.question-answer {
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        gap: 10px;
+    }
 }
 
 .Checkmark::before {
@@ -497,4 +505,70 @@ ol li {
     width: 350px;
     height: 200px;
     border: 1px solid rgb(0, 0, 0);
+}
+
+#questions-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    color: #ffffff;
+    width: 920px;
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.question-title {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.7);
+    list-style: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    h3 {
+        font-weight: 400;
+        padding-bottom: 20px;
+    }
+}
+
+.question-answer {
+    font-size: 1.125rem;
+    list-style: disc;
+    li {
+        font-size: 1.125rem;
+    }
+    ul li {
+        font-size: 1.125rem;
+        list-style: disc;
+        margin-left: 25px;
+    }
+    em {
+        color: #ffffff;
+        font-size: 1.075rem;
+    }
+}
+
+.question-answer::marker {
+    font-size: 0.6em;
+}
+
+.question-answer ul li::marker {
+    font-size: 0.6em;
+}
+
+svg{
+    transform: rotate(90deg);
+    fill: none;
+    height: 36px;
+    width: 29px;
+    margin-top: 10px;
+}
+
+path{
+    stroke: rgba(255, 255, 255, 0.7);
+    stroke-width: 2px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
 }
