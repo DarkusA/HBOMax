@@ -572,3 +572,53 @@ path{
     stroke-linecap: round;
     stroke-linejoin: round;
 }
+
+#footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    margin-top: 60px;
+}
+
+.footer-btns-row {
+    display: flex;
+}
+
+.footer-btn {
+    font-size: .875rem;
+    padding: 10px 24px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    &.bold {
+        font-weight: 700;
+    }
+    &:hover {
+        cursor: pointer;
+        background-color: rgba(64, 68, 89, .6);;
+    }
+}
+
+.social-icon-container {
+    padding: 20px;
+}
+
+#social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#tiktok {
+    width: 20px;
+}
+
+#twitter {
+    width: 15px;
+}
